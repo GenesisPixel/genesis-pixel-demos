@@ -2,106 +2,106 @@
 
 ![Preview](img/preview.jpg)
 
-> Plataforma de demos interactivas derivadas de las cards de la pagina principal de Genesis Pixel.
+> Interactive demo platform inspired by the cards on the Genesis Pixel main page.
 
 ---
 
-## Sobre este proyecto
+## About this project
 
-GenesisPixel | Demos es una coleccion de capitulos visuales e interactivos que exploran diferentes tecnicas de CSS y desarrollo frontend. Cada capitulo esta inspirado en las cards de la pagina principal de [Genesis Pixel](https://genesis-pixel.vercel.app/), permitiendo al usuario profundizar en cada concepto con ejemplos practicos y efectos visuales unicos.
+GenesisPixel | Demos is a collection of visual and interactive chapters that explore different CSS and frontend development techniques. Each chapter is inspired by the cards on the [Genesis Pixel](https://genesis-pixel.vercel.app/) main page, allowing users to dive deeper into each concept with practical examples and unique visual effects.
 
 ---
 
-## Pagina principal
+## Main website
 
-Para ver la version completa de Genesis Pixel, visita:
+To see the full version of Genesis Pixel, visit:
 
 **[https://genesis-pixel.vercel.app/](https://genesis-pixel.vercel.app/)**
 
 ---
 
-## Capitulos
+## Chapters
 
-| # | Capitulo | Nivel |
-|---|----------|-------|
-| 1 | Transitions | Principiante |
-| 2 | Transform | Intermedio |
-| 3 | Keyframes | Avanzado |
-| 4 | Interacciones | Experto |
+| # | Chapter | Level |
+|---|---------|-------|
+| 1 | Transitions | Beginner |
+| 2 | Transform | Intermediate |
+| 3 | Keyframes | Advanced |
+| 4 | Interactions | Expert |
 | 5 | Three.js | 3D |
-| 6 | Shaders | Avanzado |
+| 6 | Shaders | Advanced |
 
 ---
 
-## Tecnologias utilizadas
+## Technologies used
 
-- **HTML5** - Estructura semantica y accesible
-- **CSS3** - Grid, Flexbox y Custom Properties para layouts flexibles
-- **Afronaut Font** - Tipografia personalizada para titulos
-- **SVG** - Iconos vectoriales y efectos gooey mediante filtros
-
----
-
-## Caracteristicas principales
-
-- Navbar personalizada con icono de estrellas y lineas de navegacion
-- Efecto Goo SVG con filtros de fusion unicos por capitulo
-- Grid de 3 columnas con divisores para separar contenido
-- Navegacion entre capitulos con botones circulares de colores
-- 11 imagenes SVG por capitulo con diferentes composiciones
-- Colores personalizados por capitulo definidos con CSS Variables
-- Transiciones suaves en todas las interacciones
+- **HTML5** - Semantic and accessible structure
+- **CSS3** - Grid, Flexbox, and Custom Properties for flexible layouts
+- **Afronaut Font** - Custom typography for headings
+- **SVG** - Vector icons and gooey effects using filters
 
 ---
 
-## Estructura del proyecto
+## Key features
+
+- Custom navbar with star icon and navigation lines
+- Goo SVG effect with unique fusion filters per chapter
+- 3-column grid layout with dividers to separate content
+- Chapter navigation with colored circular buttons
+- 11 SVG images per chapter with different compositions
+- Custom colors per chapter defined with CSS Variables
+- Smooth transitions across all interactions
+
+---
+
+## Project structure
 
 ```
 genesis-pixel-demos/
-├── index.html          # Pagina principal
+├── index.html          # Main page
 ├── chapter1.html       # Transitions
 ├── chapter2.html       # Transform
 ├── chapter3.html       # Keyframes
-├── chapter4.html       # Interacciones
+├── chapter4.html       # Interactions
 ├── chapter5.html       # Three.js
 ├── chapter6.html       # Shaders
 ├── css/
-│   └── base.css        # Estilos principales
+│   └── base.css        # Main styles
 ├── img/
-│   ├── preview.jpg     # Vista previa del proyecto
-│   ├── favicon.png     # Icono del sitio
-│   ├── stars.svg       # Icono de la navbar
-│   └── svg-*.png       # Imagenes de cada capitulo
+│   ├── preview.jpg     # Project preview image
+│   ├── favicon.png     # Site icon
+│   ├── stars.svg       # Navbar icon
+│   └── svg-*.png       # Chapter images
 └── README.md
 ```
 
 ---
 
-## Como ejecutar
+## How to run
 
-1. Clonar el repositorio
-2. Abrir el archivo `index.html` en un navegador web
-3. Navegar entre capitulos usando los botones circulares ubicados en la esquina inferior derecha
-4. Explorar los diferentes efectos visuales de cada capitulo
-
----
-
-## Paleta de colores
-
-| Color | Codigo | Uso |
-|-------|--------|-----|
-| Beige | `hsla(36, 31%, 90%, 1)` | Fondo principal |
-| Verde oscuro | `hsla(158, 23%, 18%, 1)` | Texto y navbar |
-| Purpura | `rgb(205, 148, 235)` | Capitulo 1 - Transitions |
-| Verde | `rgb(174, 226, 205)` | Capitulo 2 - Transform |
-| Naranja | `rgb(227, 188, 155)` | Capitulo 3 - Keyframes |
-| Azul | `rgb(188, 225, 251)` | Capitulo 4 - Interacciones |
-| Rosa | `#FF96F9` | Capitulo 5 - Three.js |
-| Amarillo | `#FFC555` | Capitulo 6 - Shaders |
+1. Clone the repository
+2. Open the `index.html` file in a web browser
+3. Navigate between chapters using the circular buttons in the bottom right corner
+4. Explore the different visual effects in each chapter
 
 ---
 
-## Desarrollado por
+## Color palette
+
+| Color | Code | Usage |
+|-------|------|-------|
+| Beige | `hsla(36, 31%, 90%, 1)` | Main background |
+| Dark green | `hsla(158, 23%, 18%, 1)` | Text and navbar |
+| Purple | `rgb(205, 148, 235)` | Chapter 1 - Transitions |
+| Green | `rgb(174, 226, 205)` | Chapter 2 - Transform |
+| Orange | `rgb(227, 188, 155)` | Chapter 3 - Keyframes |
+| Blue | `rgb(188, 225, 251)` | Chapter 4 - Interactions |
+| Pink | `#FF96F9` | Chapter 5 - Three.js |
+| Yellow | `#FFC555` | Chapter 6 - Shaders |
+
+---
+
+## Developer
 
 **Sebastian Vasquez Echavarria**
 
@@ -109,4 +109,4 @@ Portfolio: [https://sebas-dev.vercel.app/](https://sebas-dev.vercel.app/)
 
 ---
 
-Proyecto parte de Genesis Pixel - [https://genesis-pixel.vercel.app/](https://genesis-pixel.vercel.app/)
+Part of Genesis Pixel - [https://genesis-pixel.vercel.app/](https://genesis-pixel.vercel.app/)
