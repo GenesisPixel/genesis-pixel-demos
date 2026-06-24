@@ -217,8 +217,8 @@ main {
 
 .hero__text-lines {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 16px;
+	grid-template-columns: 1fr auto 1fr auto 1fr;
+	gap: 0;
 }
 
 .hero__text-col {
@@ -226,6 +226,12 @@ main {
 	flex-direction: column;
 	gap: 8px;
 	background: red;
+}
+
+.hero__divider {
+	width: 1px;
+	background: none;
+	border-left: 1px dashed rgba(205, 148, 235, 0.4);
 }
 
 .hero__text-line {
