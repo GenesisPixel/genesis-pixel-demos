@@ -212,7 +212,6 @@ main {
 	margin-top: 40px;
 	padding: 24px;
 	width: 500px;
-	height: 500px;
 	border: 2px dashed var(--color-bg);
 	border-radius: 16px;
 	display: flex;
