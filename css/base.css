@@ -208,6 +208,40 @@ main {
 	border-radius: 30px;
 }
 
+.card {
+	margin-top: 40px;
+	padding: 24px;
+	width: 500px;
+	height: 500px;
+	border: 2px dashed var(--color-bg);
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.card__title {
+	font-family: afronaut, serif;
+	font-weight: 500;
+	font-size: 2rem;
+	color: var(--color-bg);
+	margin: 0;
+	line-height: 1;
+	letter-spacing: -2px;
+}
+
+.card__lines {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.card__line {
+	height: 10px;
+	background: rgba(205, 148, 235, 0.4);
+	border-radius: 30px;
+}
+
 .title {
 	font-family: afronaut, serif;
 	font-weight: 500;
