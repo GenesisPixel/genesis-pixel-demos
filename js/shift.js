@@ -13,7 +13,6 @@ const rangeHue = 60;
 const xOff = 0.0015;
 const yOff = 0.0015;
 const zOff = 0.0015;
-const backgroundColor = 'hsla(0,0%,5%,0)';
 
 let container;
 let canvas;
@@ -45,8 +44,8 @@ function initCircles() {
 function initCircle(i) {
   let x, y, n, t, speed, vx, vy, life, ttl, radius, hue;
 
-  x = rand(canvas.a.width);
-  y = rand(canvas.a.height);
+  x = rand(canvas.width);
+  y = rand(canvas.height);
   n = simplex.noise3D(x * xOff, y * yOff, baseHue * zOff);
   t = rand(TAU);
   speed = baseSpeed + rand(rangeSpeed);
@@ -95,71 +94,48 @@ function updateCircle(i) {
 }
 
 function drawCircle(x, y, life, ttl, radius, hue) {
-  ctx.a.save();
-  ctx.a.fillStyle = `hsla(${hue},60%,30%,${fadeInOut(life,ttl)})`;
-  ctx.a.beginPath();
-  ctx.a.arc(x,y, radius, 0, TAU);
-  ctx.a.fill();
-  ctx.a.closePath();
-  ctx.a.restore();
+  ctx.save();
+  ctx.fillStyle = `hsla(${hue},60%,30%,${fadeInOut(life,ttl)})`;
+  ctx.beginPath();
+  ctx.arc(x,y, radius, 0, TAU);
+  ctx.fill();
+  ctx.closePath();
+  ctx.restore();
 }
 
 function checkBounds(x, y, radius) {
   return (
     x < -radius ||
-    x > canvas.a.width + radius ||
+    x > canvas.width + radius ||
     y < -radius ||
-    y > canvas.a.height + radius
+    y > canvas.height + radius
   );
 }
 
 function createCanvas() {
   container = document.querySelector('.content--canvas');
-	canvas = {
-		a: document.createElement('canvas'),
-		b: document.createElement('canvas')
-	};
-	canvas.b.style = `
+	canvas = document.createElement('canvas');
+	canvas.style = `
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
 	`;
-	container.appendChild(canvas.b);
-	ctx = {
-		a: canvas.a.getContext('2d'),
-		b: canvas.b.getContext('2d')
-	};
+	container.appendChild(canvas);
+	ctx = canvas.getContext('2d');
 }
 
 function resize() {
 	const { innerWidth, innerHeight } = window;
 	
-	canvas.a.width = innerWidth;
-  canvas.a.height = innerHeight;
-
-  ctx.a.drawImage(canvas.b, 0, 0);
-
-	canvas.b.width = innerWidth;
-  canvas.b.height = innerHeight;
-  
-  ctx.b.drawImage(canvas.a, 0, 0);
-}
-
-function render() {
-  ctx.b.save();
-  ctx.b.filter = 'blur(50px)';
-  ctx.b.drawImage(canvas.a, 0, 0);
-  ctx.b.restore();
+	canvas.width = innerWidth;
+  canvas.height = innerHeight;
 }
 
 function draw() {
-  ctx.a.clearRect(0, 0, canvas.a.width, canvas.a.height);
-  ctx.b.fillStyle = backgroundColor;
-  ctx.b.fillRect(0, 0, canvas.b.width, canvas.b.height);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   updateCircles();
-  render();
 	window.requestAnimationFrame(draw);
 }
 

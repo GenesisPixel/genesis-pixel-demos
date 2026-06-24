@@ -1,1 +1,0 @@
-![Gradient Blur](img/preview.jpg)
