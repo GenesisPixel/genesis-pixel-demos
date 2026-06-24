@@ -143,6 +143,25 @@ html, body {
 	background: var(--color-beige);
 }
 
+.navbar {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 12px 24px;
+	background: var(--color-bg);
+}
+
+.navbar__icon {
+	width: 24px;
+	height: 24px;
+}
+
+.navbar__line {
+	height: 5px;
+	width: 200px;
+	background: rgba(255, 255, 255, 0.1);
+}
+
 main {
 	display: flex;
 	justify-content: center;
