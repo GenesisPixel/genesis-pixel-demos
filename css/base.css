@@ -157,9 +157,20 @@ html, body {
 }
 
 .navbar__line {
-	height: 5px;
-	width: 200px;
-	background: rgba(255, 255, 255, 0.1);
+	height: 10px;
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 30px;
+}
+
+.navbar__line--active {
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.navbar__lines {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex: 1;
 }
 
 main {
