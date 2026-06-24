@@ -1,8 +1,12 @@
+<div align="center">
+
 # GenesisPixel | Demos
 
 ![Preview](img/preview.jpg)
 
 > Interactive demo platform inspired by the cards on the Genesis Pixel main page.
+
+</div>
 
 ---
 
