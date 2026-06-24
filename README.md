@@ -1,14 +1,22 @@
 # GenesisPixel | Demos
 
-> Plataforma de demos interactivas de la pagina principal de Genesis Pixel
+![Preview](img/preview.jpg)
+
+> Plataforma de demos interactivas derivadas de las cards de la pagina principal de Genesis Pixel.
 
 ---
 
-## Descripcion
+## Sobre este proyecto
 
-Este proyecto contiene las demos de las cards de la pagina principal de Genesis Pixel. Cada capitulo demuestra un concepto diferente de CSS y desarrollo frontend con ejemplos visuales e interactivos.
+GenesisPixel | Demos es una coleccion de capitulos visuales e interactivos que exploran diferentes tecnicas de CSS y desarrollo frontend. Cada capitulo esta inspirado en las cards de la pagina principal de [Genesis Pixel](https://genesis-pixel.vercel.app/), permitiendo al usuario profundizar en cada concepto con ejemplos practicos y efectos visuales unicos.
 
-**Pagina principal:** [https://genesis-pixel.vercel.app/](https://genesis-pixel.vercel.app/)
+---
+
+## Pagina principal
+
+Para ver la version completa de Genesis Pixel, visita:
+
+**[https://genesis-pixel.vercel.app/](https://genesis-pixel.vercel.app/)**
 
 ---
 
@@ -25,28 +33,28 @@ Este proyecto contiene las demos de las cards de la pagina principal de Genesis 
 
 ---
 
-## Tecnologias
+## Tecnologias utilizadas
 
-- HTML5
-- CSS3 (Grid, Flexbox, Custom Properties)
-- Afronaut Font (tipografia personalizada)
-- SVG (iconos y efectos gooey con filtros)
+- **HTML5** - Estructura semantica y accesible
+- **CSS3** - Grid, Flexbox y Custom Properties para layouts flexibles
+- **Afronaut Font** - Tipografia personalizada para titulos
+- **SVG** - Iconos vectoriales y efectos gooey mediante filtros
 
 ---
 
-## Caracteristicas
+## Caracteristicas principales
 
-- Navbar personalizada con icono de estrellas
+- Navbar personalizada con icono de estrellas y lineas de navegacion
 - Efecto Goo SVG con filtros de fusion unicos por capitulo
-- Grid de 3 columnas con divisores dashed
-- Navegacion por capitulos con botones circulares
-- 11 imagenes SVG por capitulo
-- Colores personalizados por capitulo con CSS Variables
-- Transiciones suaves en interacciones
+- Grid de 3 columnas con divisores para separar contenido
+- Navegacion entre capitulos con botones circulares de colores
+- 11 imagenes SVG por capitulo con diferentes composiciones
+- Colores personalizados por capitulo definidos con CSS Variables
+- Transiciones suaves en todas las interacciones
 
 ---
 
-## Estructura
+## Estructura del proyecto
 
 ```
 genesis-pixel-demos/
@@ -60,38 +68,45 @@ genesis-pixel-demos/
 ├── css/
 │   └── base.css        # Estilos principales
 ├── img/
+│   ├── preview.jpg     # Vista previa del proyecto
 │   ├── favicon.png     # Icono del sitio
-│   ├── stars.svg       # Icono navbar
-│   └── svg-*.png       # Imagenes de capitulos
+│   ├── stars.svg       # Icono de la navbar
+│   └── svg-*.png       # Imagenes de cada capitulo
 └── README.md
 ```
 
 ---
 
-## Como Usar
+## Como ejecutar
 
-1. Clona el repositorio
-2. Abre `index.html` en tu navegador
-3. Navega entre capitulos usando los botones circulares
-4. Explora los diferentes efectos visuales
+1. Clonar el repositorio
+2. Abrir el archivo `index.html` en un navegador web
+3. Navegar entre capitulos usando los botones circulares ubicados en la esquina inferior derecha
+4. Explorar los diferentes efectos visuales de cada capitulo
 
 ---
 
-## Paleta de Colores
+## Paleta de colores
 
 | Color | Codigo | Uso |
 |-------|--------|-----|
 | Beige | `hsla(36, 31%, 90%, 1)` | Fondo principal |
 | Verde oscuro | `hsla(158, 23%, 18%, 1)` | Texto y navbar |
-| Purpura | `rgb(205, 148, 235)` | Cap 1 - Transitions |
-| Verde | `rgb(174, 226, 205)` | Cap 2 - Transform |
-| Naranja | `rgb(227, 188, 155)` | Cap 3 - Keyframes |
-| Azul | `rgb(188, 225, 251)` | Cap 4 - Interacciones |
-| Rosa | `#FF96F9` | Cap 5 - Three.js |
-| Amarillo | `#FFC555` | Cap 6 - Shaders |
+| Purpura | `rgb(205, 148, 235)` | Capitulo 1 - Transitions |
+| Verde | `rgb(174, 226, 205)` | Capitulo 2 - Transform |
+| Naranja | `rgb(227, 188, 155)` | Capitulo 3 - Keyframes |
+| Azul | `rgb(188, 225, 251)` | Capitulo 4 - Interacciones |
+| Rosa | `#FF96F9` | Capitulo 5 - Three.js |
+| Amarillo | `#FFC555` | Capitulo 6 - Shaders |
 
 ---
 
-**GenesisPixel** - Desarrollo Web Creativo
+## Desarrollado por
 
-https://genesis-pixel.vercel.app/
+**Sebastian Vasquez Echavarria**
+
+Portfolio: [https://sebas-dev.vercel.app/](https://sebas-dev.vercel.app/)
+
+---
+
+Proyecto parte de Genesis Pixel - [https://genesis-pixel.vercel.app/](https://genesis-pixel.vercel.app/)
