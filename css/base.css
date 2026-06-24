@@ -298,25 +298,23 @@ main {
 	width: 36px;
 	height: 36px;
 	border-radius: 50%;
-	background: none;
-	color: var(--color-bg);
+	background: var(--color-bg);
+	color: var(--color-beige);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-decoration: underline;
-	font-family: sans-serif;
+	text-decoration: none;
+	font-family: afronaut, serif;
 	font-size: 0.85rem;
-	font-weight: 600;
+	font-weight: 500;
 	font-style: italic;
-	transition: opacity 0.3s;
-	padding: 0;
+	transition: background 0.3s;
 }
 
 .chapters__btn:hover {
-	opacity: 0.6;
+	background: rgb(205, 148, 235);
 }
 
 .chapters__btn--active {
-	background: none;
-	opacity: 1;
+	background: rgb(205, 148, 235);
 }

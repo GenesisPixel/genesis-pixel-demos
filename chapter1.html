@@ -3,14 +3,14 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Keyframes - Capítulo 1</title>
+		<title>Transitions - Principiante - Capítulo 1</title>
 		<link rel="shortcut icon" href="img/favicon.jpg">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/gmc0vlm.css">
 		<style>
-			:root { --chapter-color: #FF8709; }
+			:root { --chapter-color: rgb(205, 148, 235); }
 			.hero__line, .hero__text-line, .card__line, .card__progress { background: var(--chapter-color) !important; }
-			.hero__text-line, .card__line, .card__progress-fill { background: rgba(255, 135, 9, 0.4) !important; }
+			.hero__text-line, .card__line, .card__progress-fill { background: rgba(205, 148, 235, 0.4) !important; }
 			.chapters__btn--active { background: var(--chapter-color) !important; }
 		</style>
 	</head>
@@ -45,33 +45,11 @@
 						<defs><pattern id="paint0_pattern" patternContentUnits="objectBoundingBox" width="0.526317" height="0.602717"><use xlink:href="#svg-noise" transform="scale(0.00105263 0.00120543)"/></pattern><pattern id="paint1_pattern" patternContentUnits="objectBoundingBox" width="1.16776" height="1.16776"><use xlink:href="#svg-noise" transform="scale(0.00233553)"/></pattern><linearGradient id="paint0_linear" x1="412.458" y1="-10.4465" x2="100.768" y2="481.138" gradientUnits="userSpaceOnUse"><stop offset="0.26957" stop-color="#FEC5FB"/><stop offset="0.838196" stop-color="#00BAE2"/></linearGradient><linearGradient id="paint1_linear" x1="-14.6291" y1="-5.39174" x2="154.494" y2="227.531" gradientUnits="userSpaceOnUse"><stop offset="0.26957" stop-color="#FEC5FB"/><stop offset="0.838196" stop-color="#00BAE2"/></linearGradient></defs>
 					</svg>
 					<svg width="372" height="370" viewBox="0 0 372 370" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" class="goo">
-    <g filter="url(#goo1)">
-        <g fill="url(#goo1-paint)">
-            <path class="home-tools-svg-circle-small" d="M190 275C190 327.467 147.467 370 95 370C42.5329 370 0 327.467 0 275C0 222.533 42.5329 180 95 180C147.467 180 190 222.533 190 275Z"></path>
-            <path class="home-tools-svg-circle-small" d="M190 275C190 327.467 147.467 370 95 370C42.5329 370 0 327.467 0 275C0 222.533 42.5329 180 95 180C147.467 180 190 222.533 190 275Z" fill="url(#goo1-pattern)" style="mix-blend-mode:multiply"></path>
-            <path class="home-tools-svg-circle" d="M85 7.99999C85 3.58172 88.5817 0 93 0H363.884C368.302 0 371.884 3.58172 371.884 8V277C371.884 281.418 368.302 285 363.884 285H93C88.5817 285 85 281.418 85 277V7.99999Z"></path>
-            <path class="home-tools-svg-circle" d="M85 7.99999C85 3.58172 88.5817 0 93 0H363.884C368.302 0 371.884 3.58172 371.884 8V277C371.884 281.418 368.302 285 363.884 285H93C88.5817 285 85 281.418 85 277V7.99999Z" fill="url(#goo1-pattern)" style="mix-blend-mode:multiply"></path>
-        </g>
-    </g>
-    <path id="home-tools-svg-square-large" d="M85 7.99999C85 3.58172 88.5817 0 93 0H363.884C368.302 0 371.884 3.58172 371.884 8V277C371.884 281.418 368.302 285 363.884 285H93C88.5817 285 85 281.418 85 277V7.99999Z"></path>
-    <defs>
-        <pattern id="goo1-pattern" patternContentUnits="objectBoundingBox" width="0.261429" height="0.263158">
-            <use xlink:href="#svg-noise" transform="scale(0.000522859 0.000526316)"></use>
-        </pattern>
-        <radialGradient id="goo1-paint" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-4.01487e-06 268.924) rotate(-48.1016) scale(361.295 241.508)">
-            <stop stop-color="#FFD9B0"></stop>
-            <stop offset="0.807292" stop-color="#FD9F3B"></stop>
-            <stop offset="1" stop-color="#FF8709"></stop>
-        </radialGradient>
-        <filter id="goo1">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"></feGaussianBlur>
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"></feColorMatrix>
-            <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
-        </filter>
-    </defs>
-				</svg>
+						<g filter="url(#goo1)"><g fill="url(#goo1-paint)"><path d="M190 275C190 327.467 147.467 370 95 370C42.5329 370 0 327.467 0 275C0 222.533 42.5329 180 95 180C147.467 180 190 222.533 190 275Z"></path><path d="M190 275C190 327.467 147.467 370 95 370C42.5329 370 0 327.467 0 275C0 222.533 42.5329 180 95 180C147.467 180 190 222.533 190 275Z" fill="url(#goo1-pattern)" style="mix-blend-mode:multiply"></path><path d="M85 7.99999C85 3.58172 88.5817 0 93 0H363.884C368.302 0 371.884 3.58172 371.884 8V277C371.884 281.418 368.302 285 363.884 285H93C88.5817 285 85 281.418 85 277V7.99999Z"></path><path d="M85 7.99999C85 3.58172 88.5817 0 93 0H363.884C368.302 0 371.884 3.58172 371.884 8V277C371.884 281.418 368.302 285 363.884 285H93C88.5817 285 85 281.418 85 277V7.99999Z" fill="url(#goo1-pattern)" style="mix-blend-mode:multiply"></path></g></g>
+						<defs><pattern id="goo1-pattern" patternContentUnits="objectBoundingBox" width="0.261429" height="0.263158"><use xlink:href="#svg-noise" transform="scale(0.000522859 0.000526316)"></use></pattern><radialGradient id="goo1-paint" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-4.01487e-06 268.924) rotate(-48.1016) scale(361.295 241.508)"><stop stop-color="#FFD9B0"></stop><stop offset="0.807292" stop-color="#FD9F3B"></stop><stop offset="1" stop-color="#FF8709"></stop></radialGradient><filter id="goo1"><feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"></feGaussianBlur><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"></feColorMatrix><feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite></filter></defs>
+					</svg>
 				</div>
-				<h1 class="title">keyframes</h1>
+				<h1 class="title">transitions</h1>
 				<div class="hero__text-lines">
 					<span class="hero__text-line" style="width:700px"></span>
 					<span class="hero__text-line" style="width:650px"></span>
@@ -100,8 +78,6 @@
 			<a href="chapter2.html" class="chapters__btn">2</a>
 			<a href="chapter3.html" class="chapters__btn">3</a>
 			<a href="chapter4.html" class="chapters__btn">4</a>
-			<a href="chapter5.html" class="chapters__btn">5</a>
-			<a href="chapter6.html" class="chapters__btn">6</a>
 		</nav>
 	</body>
 </html>
