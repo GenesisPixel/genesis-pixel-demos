@@ -190,7 +190,19 @@ main {
 .hero__line {
 	height: 10px;
 	width: 120px;
-	background: var(--app-color-blue500);
+	background: rgb(205, 148, 235);
+	border-radius: 30px;
+}
+
+.hero__text-lines {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.hero__text-line {
+	height: 10px;
+	background: rgba(205, 148, 235, 0.4);
 	border-radius: 30px;
 }
 
