@@ -284,3 +284,39 @@ main {
 	line-height: 1;
 	letter-spacing: -10px;
 }
+
+.chapters {
+	position: fixed;
+	bottom: 24px;
+	right: 24px;
+	display: flex;
+	gap: 8px;
+	z-index: 100;
+}
+
+.chapters__btn {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: none;
+	color: var(--color-bg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: underline;
+	font-family: sans-serif;
+	font-size: 0.85rem;
+	font-weight: 600;
+	font-style: italic;
+	transition: opacity 0.3s;
+	padding: 0;
+}
+
+.chapters__btn:hover {
+	opacity: 0.6;
+}
+
+.chapters__btn--active {
+	background: none;
+	opacity: 1;
+}
