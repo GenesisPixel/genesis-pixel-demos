@@ -200,14 +200,20 @@ main {
 	display: flex;
 	align-items: center;
 	gap: 16px;
+	margin-top: 50px;
 }
 
 .flower,
 .curve,
 .star {
-	width: 124px;
-	height: 124px;
-	filter: brightness(1.2) saturate(0.5) hue-rotate(10deg);
+	width: 74px;
+	height: 74px;
+	filter: saturate(1.5) hue-rotate(-15deg);
+}
+
+.diamond {
+	width: 74px;
+	height: 74px;
 }
 
 .hero__text-lines {
