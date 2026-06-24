@@ -192,6 +192,7 @@ main {
 	width: 120px;
 	background: rgb(205, 148, 235);
 	border-radius: 30px;
+	margin-top: 60px;
 }
 
 .hero__text-lines {
@@ -211,7 +212,7 @@ main {
 	font-weight: 500;
 	font-size: 5rem;
 	color: var(--color-bg);
-	margin: 0;
+	margin: 0 0 20px 0;
 	line-height: 1;
 	letter-spacing: -10px;
 }
