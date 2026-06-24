@@ -208,10 +208,9 @@ main {
 .star {
 	width: 74px;
 	height: 74px;
-	filter: saturate(1.5) hue-rotate(-15deg);
 }
 
-.diamond {
+.goo {
 	width: 74px;
 	height: 74px;
 }
