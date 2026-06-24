@@ -225,13 +225,13 @@ main {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
-	background: red;
 }
 
 .hero__divider {
-	width: 1px;
+	width: 48px;
+	padding: 0 12px;
 	background: none;
-	border-left: 1px dashed rgba(205, 148, 235, 0.4);
+	border-left: 1px dashed rgba(29, 43, 54, 0.5);
 }
 
 .hero__text-line {
