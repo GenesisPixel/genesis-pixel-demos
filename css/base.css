@@ -196,25 +196,18 @@ main {
 	margin-top: 60px;
 }
 
-.flower {
-	width: 62px;
-	height: 62px;
-}
-
 .hero__svgs {
 	display: flex;
 	align-items: center;
 	gap: 16px;
 }
 
-.curve {
-	width: 200px;
-	height: auto;
-}
-
+.flower,
+.curve,
 .star {
 	width: 124px;
-	height: auto;
+	height: 124px;
+	filter: brightness(1.2) saturate(0.5) hue-rotate(10deg);
 }
 
 .hero__text-lines {
