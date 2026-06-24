@@ -1,69 +1,161 @@
-article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
-*,
-*::after,
-*::before {
-	box-sizing: border-box;
-}
+/* ========================================
+   Imports
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+/* ========================================
+   CSS Variables
+   ======================================== */
 
 :root {
-	font-size: 15px;
+  /* Core Colors */
+  --color-beige: hsla(36, 31%, 90%, 1);
+  --color-bg: hsla(158, 23%, 18%, 1);
+  --color-text: hsla(160, 52%, 71%, 1);
+  --color-gradient: linear-gradient(to bottom, hsla(36, 31%, 90%, 0) 0%, hsla(36, 31%, 90%, .013) 9.7%, hsla(36, 31%, 90%, .049) 18.1%, hsla(36, 31%, 90%, .104) 25.5%, hsla(36, 31%, 90%, .175) 31.9%, hsla(36, 31%, 90%, .259) 37.7%, hsla(36, 31%, 90%, .352) 43%, hsla(36, 31%, 90%, .45) 47.9%, hsla(36, 31%, 90%, .55) 52.8%, hsla(36, 31%, 90%, .648) 57.7%, hsla(36, 31%, 90%, .741) 63%, hsla(36, 31%, 90%, .825) 68.7%, hsla(36, 31%, 90%, .896) 75%, hsla(36, 31%, 90%, .951) 82.2%, hsla(36, 31%, 90%, .987) 90.5%, hsl(36, 31%, 90%) 100%);
+  --background-hero: linear-gradient(135deg, #a0f36d, #d3dbab, #590a8198, #8a880fca, #5A4894, #ff94c3, #7cffee);
+
+  /* Fonts */
+  --font-gt: 'GT', sans-serif;
+  --font-acorn: 'Acorn', sans-serif;
+  --font-afronaut: 'afronaut', serif;
+  --font-google-sans: 'Google Sans Flex', sans-serif;
+
+  /* Border Radius */
+  --radius-base: .75rem;
+
+  /* App Colors - White */
+  --app-color-white: #ffffff;
+
+  /* App Colors - Blue */
+  --app-color-blue100: #F3FBFF;
+  --app-color-blue200: #D6EDFF;
+  --app-color-blue300: #A0D4FF;
+  --app-color-blue400: #57B0FB;
+  --app-color-blue500: #1292EE;
+  --app-color-blue600: #0077CC;
+  --app-color-blue700: #005CA4;
+  --app-color-blue800: #034077;
+
+  /* App Colors - Grey */
+  --app-color-grey200: #F9FAFA;
+  --app-color-grey300: #F1F3F5;
+  --app-color-grey400: #E5E9EC;
+  --app-color-grey500: #D5DCE1;
+  --app-color-grey600: #C5CED6;
+  --app-color-grey700: #B7C2CC;
+  --app-color-grey800: #A5B2BD;
+
+  /* App Colors - Charcoal */
+  --app-color-charcoal200: #93A1B0;
+  --app-color-charcoal300: #748494;
+  --app-color-charcoal400: #556575;
+  --app-color-charcoal500: #405261;
+  --app-color-charcoal600: #314351;
+  --app-color-charcoal700: #253642;
+  --app-color-charcoal800: #1D2B36;
+
+  /* App Colors - Yellow */
+  --app-color-yellow100: #FFF9EF;
+  --app-color-yellow200: #FFF2D7;
+  --app-color-yellow300: #FFE7B8;
+  --app-color-yellow400: #FDD88E;
+  --app-color-yellow500: #FFC555;
+  --app-color-yellow600: #FAB347;
+  --app-color-yellow900: #B24319;
+
+  /* App Colors - Green */
+  --app-color-green200: #E3FBEE;
+  --app-color-green500: #56C288;
+  --app-color-green600: #39AC6E;
+  --app-color-green700: #268C55;
+  --app-color-green750: #248451;
+  --app-color-green800: #106236;
+
+  /* App Colors - Indigo / Purple / Lavender */
+  --app-color-indigo200: #DFE7FF;
+  --app-color-purple100: #F9F9FF;
+  --app-color-purple200: hsla(237, 100%, 96%, 1);
+  --app-color-lavender200: #EBECFF;
+
+  /* Doodler Colors */
+  --color-doodler-white: #FFF;
+  --color-doodler-grey: #FCFCFC;
+  --color-doodler-border: rgba(0, 0, 0, .1);
+  --color-doodler-active: #007AFF;
+  --color-doodler-base-grey: #636366;
+  --color-doodler-base-green: #56C288;
+  --color-doodler-base-indigo: #527CEB;
+  --color-doodler-purple: #6e56cf;
+  --color-doodler-purple-dark: #5746af;
+  --color-doodler-lavender: #EBECFF;
+  --color-doodler-base-yellow: #FFC555;
+  --color-doodler-base-pink: #F23459;
+  --color-doodler-base-black: #444444;
+
+  /* Doodler Radius */
+  --doodler-radius-menu: 13px;
+  --doodler-radius-md: 6px;
+  --doodler-radius-lg: 20px;
+
+  /* Design Module - Dark */
+  --dm-dark-500: #1C1C1E;
+  --dm-dark-400: #2C2C2E;
+  --dm-dark-300: #3A3A3C;
+  --dm-dark-200: #48484A;
+  --dm-dark-100: #636366;
+  --dm-black: #161616;
+  --dm-blur: rgba(28, 28, 30, .7);
+
+  /* Design Module - Light */
+  --dm-light-300: #8E8E93;
+  --dm-light-200: #AEAEB2;
+  --dm-light-100: #C7C7CC;
+
+  /* Design Module - Colors */
+  --dm-blue: #57B0FB;
+  --dm-blue-dark: #22282E;
+  --dm-yellow: #FFC555;
+  --dm-yellow-dark: #29241A;
+  --dm-green: #56C288;
+  --dm-green-dark: #172920;
+  --dm-green-bg: rgba(86, 194, 136, 0.1);
+  --dm-red: #FC5D7D;
+  --dm-red-dark: #332024;
+  --dm-purple: #9FA6FF;
+  --dm-purple-dark: #24242E;
+  --dm-indigo: #527CEB;
+  --dm-indigo-dark: #202739;
+
+  /* Transitions & Shadows */
+  --curve: cubic-bezier(0, .49, 0, 1.49);
+  --curve-timing: .35s;
+  --shadow-menu: 0px 10px 60px rgba(0, 0, 0, .1);
 }
 
-html {
-	background: #000;
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: var(--color-beige);
 }
 
-body {
-	font-family: Didot, "Didot LT STD", "Bodoni MT", "ltc-bodoni-175", "Hoefler Text", Garamond, "Times New Roman", serif;
-	min-height: 100vh;
-	color: var(--color-text);
-	background-color: #000;
-	overflow: hidden;
-}
-
-.demo-3 {
-	--color-text: #1ed97c;
-	--color-link: #fff;
-	--color-link-hover: #fff;
-	--color-title: #fff;
-}
-
-.content {
+main {
 	display: flex;
-	flex-direction: column;
-	width: 100vw;
-	height: 100vh;
-	position: relative;
 	justify-content: center;
 	align-items: center;
+	height: 100vh;
 }
 
-.content__title {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 100%;
-	text-align: center;
-	margin-top: -200px;
-	z-index: 100;
-	font-size: 25rem;
-	color: var(--color-title);
-	line-height: 1;
+.title {
 	font-family: afronaut, serif;
 	font-weight: 500;
+	font-size: 25rem;
+	color: var(--color-bg);
+	margin: 0;
+	line-height: 1;
 	letter-spacing: -10px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
 }
-
-.content__icon {
-	width: 150px;
-	height: 150px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -230px;
-	margin-left: 100px;
-}
-
