@@ -48,30 +48,31 @@
 					<div class="hero__text-col">
 						<div class="hero__text-row">
 							<img src="img/svg-1.png" class="icon hero__text-icon" alt="" width="24" height="24">
-							<h2>Imagina que estás en un set de animación</h2>
+							<h2>El problema de los cambios bruscos</h2>
 						</div>
-						<p>Antes de que existiera el cine digital, los animadores dibujaban miles de fotogramas a mano. Pero no todos los fotogramas eran iguales: los más experimentados se encargaban de dibujar los momentos decisivos —el inicio del salto, el punto más alto, el aterrizaje— y luego asistentes dibujaban los marcos intermedios. Esos momentos decisivos se llamaron keyframes, fotogramas clave.</p>
+						<p>Imagina que vas conduciendo un auto a 60 km/h y de repente, en un milisegundo, la velocidad cambia a 0. Tu cuerpo no lo agradecería, ¿verdad? En la vida real, las cosas no cambian de estado instantáneamente; existe aceleración, desaceleración y un tiempo de reacción natural.</p>
+						<p>Sin embargo, en el mundo web, cuando cambias el estilo de un elemento (por ejemplo, el color de fondo de un botón al pasar el cursor), el navegador aplica el nuevo estilo de inmediato. Esto crea un "salto brusco" que puede sentirse mecánico, robótico y poco amigable.</p>
 					</div>
 					<span class="hero__divider"></span>
 					<div class="hero__text-col">
 						<div class="hero__text-row">
 							<img src="img/svg-2.png" class="icon hero__text-icon" alt="" width="24" height="24">
-							<h2>CSS funciona exactamente igual.</h2>
+							<h2>Aquí es donde entran las Transitions</h2>
 						</div>
-						<p>Tú describes los momentos importantes —cómo luce el elemento al inicio, a la mitad, al final— y el navegador calcula automáticamente todo lo que ocurre entre esos puntos. Ese proceso se llama interpolación, y es lo que convierte una serie de estados estáticos en movimiento fluido.</p>
-						<h3>¿Qué pasaría si no existieran los keyframes?</h3>
-						<p>Antes de CSS Animations, animar elementos en la web requería JavaScript puro: calcular posiciones frame a frame, gestionar intervalos de tiempo, y rezar para que la animación no tartamudeara en navegadores lentos. Era código frágil, difícil de mantener y con un impacto brutal en el rendimiento.</p>
+						<p>Las CSS Transitions (Transiciones) existen para solucionar este problema. Te permiten cambiar los valores de las propiedades CSS de manera suave a lo largo de una duración determinada. No crean animaciones complejas e independientes como @keyframes, sino que actúan como un "puente" visual entre un estado A (normal) y un estado B (hover, focus, etc.).</p>
+						<p>El objetivo principal de una transición es mejorar la Experiencia de Usuario (UX). Una interfaz que reacciona suavemente a nuestras acciones nos transmite la sensación de calidad, atención al detalle y naturalidad.</p>
 					</div>
 					<span class="hero__divider"></span>
 					<div class="hero__text-col">
 						<div class="hero__text-row">
 							<img src="img/svg-3.png" class="icon hero__text-icon" alt="" width="24" height="24">
-							<h2>Los keyframes llegaron para que puedas describir lo que quieres</h2>
+							<h2>Diferencia entre Animación y Transición</h2>
 						</div>
-						<p>no programar cómo lograrlo. Declaras los estados clave y el navegador —que tiene acceso directo a la GPU del dispositivo— se encarga de renderizarlo a 60 fotogramas por segundo.</p>
-						<h3>El modelo mental correcto</h3>
-						<p>Piensa en un keyframe como un checkpoint en el tiempo. Le dices al navegador: "Al 0% de la duración de la animación, el elemento luce así. Al 50%, luce asá. Al 100%, termina de esta forma." El navegador conecta esos puntos con una transición fluida.</p>
-						<p>Cada bloque @keyframes necesita como mínimo un nombre único que tú eliges, y al menos dos estados (el inicio con 0% o from, y el final con 100% o to). Con eso es suficiente para crear tu primer animation. Todo lo demás —duración, repetición, easing— lo controlas desde el selector CSS del elemento.</p>
+						<p>Es común confundir ambas, pero tienen propósitos distintos:</p>
+						<h3>✦Transitions:</h3>
+						<p>Conectan dos estados definidos (por ejemplo, estado normal y :hover). Responden a la interacción y solo ocurren cuando una propiedad CSS cambia de valor.</p>
+						<h3>✦Animations (Keyframes):</h3>
+						<p>Pueden ejecutarse solas, sin interacción del usuario, pueden tener múltiples pasos intermedios y repetirse infinitamente.</p>
 					</div>
 				</div>
 			</div>
