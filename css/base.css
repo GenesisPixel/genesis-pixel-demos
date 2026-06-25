@@ -203,8 +203,15 @@ main {
 
 .hero__header-img {
 	border-radius: 30px;
-	height: 120px;
+	height: 110px;
 	width: auto;
+}
+
+.hero__face {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	object-fit: cover;
 }
 
 .hero__line {
@@ -225,6 +232,36 @@ main {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
+}
+
+.hero__text-col h2 {
+	font-family: afronaut, serif;
+	font-size: 0.95rem;
+	font-weight: 400;
+	color: var(--color-bg);
+	margin: 0;
+	line-height: 1.3;
+	letter-spacing: -1px;
+}
+
+.hero__text-col h3 {
+	font-family: afronaut, serif;
+	font-size: 0.95rem;
+	font-weight: 400;
+	color: var(--color-bg);
+	margin: 8px 0 0 0;
+	line-height: 1.3;
+	letter-spacing: -1px;
+}
+
+.hero__text-col p {
+	font-family: var(--font-google-sans);
+	font-size: 0.75rem;
+	color: var(--color-bg);
+	margin: 0;
+	line-height: 1.5;
+	opacity: 0.8;
+	letter-spacing: -1px;
 }
 
 .hero__text-row {
