@@ -244,6 +244,9 @@ main {
 
 .title {
 	font-family: afronaut, serif;
+   display: flex;
+   align-items: center;
+   gap: 10px;
 	font-weight: 500;
 	font-size: 5rem;
 	color: var(--color-bg);
