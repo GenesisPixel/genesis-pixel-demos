@@ -214,6 +214,30 @@ main {
 	object-fit: cover;
 }
 
+.hero__face-row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.hero__face-row .hero__line--light {
+	height: 10px;
+	margin-top: 0;
+}
+
+.hero__name {
+	font-family: var(--font-google-sans);
+	font-size: 0.75rem;
+	color: var(--color-bg);
+	font-style: italic;
+	margin: 0;
+	opacity: 0.8;
+}
+
+.hero__line--light {
+	background: rgba(205, 148, 235, 0.5) !important;
+}
+
 .hero__line {
 	height: 10px;
 	width: 120px;
