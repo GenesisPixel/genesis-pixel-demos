@@ -235,6 +235,16 @@ main {
 	opacity: 0.8;
 }
 
+.hero__svgs {
+	display: flex;
+	gap: 8px;
+	margin-top: 4px;
+}
+
+.hero__svg {
+	border-radius: 6px;
+}
+
 .hero__line--light {
 	background: rgba(205, 148, 235, 0.5) !important;
 }
