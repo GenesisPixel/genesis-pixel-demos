@@ -47,28 +47,34 @@
 					<div class="hero__text-col">
 						<div class="hero__text-row">
 							<img src="img/svg-1.png" class="icon hero__text-icon" alt="" width="24" height="24">
-							<h2></h2>
+							<h2>Imagina que estás en un set de animación</h2>
 						</div>
-						<p></p>
+						<p>Antes de que existiera el cine digital, los animadores dibujaban miles de fotogramas a mano. Pero no todos los fotogramas eran iguales: los más experimentados se encargaban de dibujar los momentos decisivos —el inicio del salto, el punto más alto, el aterrizaje— y luego asistentes dibujaban los marcos intermedios. Esos momentos decisivos se llamaron keyframes, fotogramas clave.</p>
+						<p>CSS funciona exactamente igual. Tú describes los momentos importantes —cómo luce el elemento al inicio, a la mitad, al final— y el navegador calcula automáticamente todo lo que ocurre entre esos puntos. Ese proceso se llama interpolación, y es lo que convierte una serie de estados estáticos en movimiento fluido.</p>
 					</div>
 					<span class="hero__divider"></span>
 					<div class="hero__text-col">
 						<div class="hero__text-row">
 							<img src="img/svg-2.png" class="icon hero__text-icon" alt="" width="24" height="24">
-							<h2></h2>
+							<h2>¿Qué pasaría si no existieran los keyframes?</h2>
 						</div>
-						<p></p>
-						<h3></h3>
-						<p></p>
+						<p>Antes de CSS Animations, animar elementos en la web requería JavaScript puro: calcular posiciones frame a frame, gestionar intervalos de tiempo, y rezar para que la animación no tartamudeara en navegadores lentos. Era código frágil, difícil de mantener y con un impacto brutal en el rendimiento.</p>
+						<p>Los keyframes llegaron para que puedas describir lo que quieres, no programar cómo lograrlo. Declaras los estados clave y el navegador —que tiene acceso directo a la GPU del dispositivo— se encarga de renderizarlo a 60 fotogramas por segundo.</p>
 					</div>
 					<span class="hero__divider"></span>
 					<div class="hero__text-col">
 						<div class="hero__text-row">
 							<img src="img/svg-3.png" class="icon hero__text-icon" alt="" width="24" height="24">
-							<h2></h2>
+							<h2>El modelo mental correcto</h2>
 						</div>
-						<p></p>
-						<h3></h3>
+						<p>Piensa en un keyframe como un checkpoint en el tiempo. Le dices al navegador: "Al 0% de la duración de la animación, el elemento luce así. Al 50%, luce asá. Al 100%, termina de esta forma." El navegador conecta esos puntos con una transición fluida.</p>
+						<h3>Vocabulario esencial de esta lección</h3>
+						<p>✦@keyframes: La regla CSS que actúa como contenedor de todos los fotogramas clave de una animación.</p>
+						<p>✦Nombre de animación: El identificador que usarás para vincular los keyframes a un elemento. Tú lo inventas: fadeIn, slide-up, pulsarHero.</p>
+						<p>✦Porcentajes (0%–100%): Representan momentos dentro de la duración total. Si la animación dura 4 segundos, el 25% ocurre exactamente al segundo 1.</p>
+						<p>✦from / to: Sinónimos de 0% y 100%. Perfectos cuando tu animación solo tiene estado inicial y final.</p>
+					</div>
+				</div>
 						<p></p>
 						<p></p>
 					</div>

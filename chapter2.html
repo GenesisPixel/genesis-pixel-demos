@@ -47,30 +47,39 @@
 					<div class="hero__text-col">
 						<div class="hero__text-row">
 							<img src="img/svg-1.png" class="icon hero__text-icon" alt="" width="24" height="24">
-							<h2></h2>
+							<h2>El arte de manipular la realidad del navegador</h2>
 						</div>
-						<p></p>
+						<p>Imagina que tienes una caja de cartón sobre tu escritorio. Si quieres moverla, puedes empujarla. Si quieres ver qué hay debajo, puedes levantarla. Si quieres que ocupe menos espacio, podrías aplastarla. En el mundo físico, damos por sentado que podemos manipular objetos tridimensionalmente sin alterar el resto de la habitación.</p>
+						<p>En la web tradicional, esto no era tan sencillo. Si querías mover un botón un poco hacia la derecha, usabas margin-left o left. ¿El problema? Al empujar ese botón, este empujaba al texto de al lado, que a su vez movía la imagen de abajo, desencadenando una reacción en cadena masiva.</p>
+						<p>Aquí es donde entra CSS Transform, una de las propiedades más poderosas y fascinantes de todo el lenguaje.</p>
 					</div>
 					<span class="hero__divider"></span>
 					<div class="hero__text-col">
 						<div class="hero__text-row">
 							<img src="img/svg-2.png" class="icon hero__text-icon" alt="" width="24" height="24">
-							<h2></h2>
+							<h2>¿Por qué es tan importante en las animaciones?</h2>
 						</div>
-						<p></p>
-						<h3></h3>
-						<p></p>
+						<p>La magia de transform radica en que opera en una dimensión diferente. Cuando aplicas una transformación a un elemento, el navegador crea una capa separada —como un trozo de cristal flotando sobre tu página— y manipula ese cristal directamente usando la tarjeta gráfica (GPU) de tu dispositivo.</p>
+						<p>¿Qué significa esto para ti? Que puedes mover, rotar, escalar y distorsionar elementos sin afectar absolutamente nada de lo que hay a su alrededor. Puedes hacer que un modal caiga desde el cielo sin mover un solo píxel de tu texto principal, logrando esos anhelados 60 fotogramas por segundo.</p>
+						<h3>Mover vs Transformar</h3>
+						<p><strong>Mover (margin, top, left):</strong> Altera la estructura física de la página (el Layout). Es pesado, lento y debe evitarse en animaciones.</p>
+						<p><strong>Transformar (translate, rotate, scale):</strong> Altera únicamente la representación visual (el Compositing). Es fluido, rápido y es el estándar de la industria para Motion Design.</p>
 					</div>
 					<span class="hero__divider"></span>
 					<div class="hero__text-col">
 						<div class="hero__text-row">
 							<img src="img/svg-3.png" class="icon hero__text-icon" alt="" width="24" height="24">
-							<h2></h2>
+							<h2>Casos de uso en el mundo real</h2>
 						</div>
-						<p></p>
-						<h3></h3>
-						<p></p>
-						<p></p>
+						<p>Si navegas por cualquier producto digital de alta calidad (como Apple, Stripe o Linear), estás viendo transform en acción en cada segundo:</p>
+						<h3>Tarjetas interactivas:</h3>
+						<p>Que se elevan (translateY) y crecen (scale) cuando pasas el ratón por encima para invitar al clic.</p>
+						<h3>Menús móviles:</h3>
+						<p>Que se deslizan fluidamente desde fuera de la pantalla (translateX).</p>
+						<h3>Loaders y Spinners:</h3>
+						<p>Iconos de carga que giran infinitamente (rotate) mientras esperas que una petición se complete.</p>
+						<h3>Modales y Popovers:</h3>
+						<p>Que aparecen escalando desde el centro de la pantalla dando una sensación de despliegue orgánico.</p>
 					</div>
 				</div>
 			</div>
