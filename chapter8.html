@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>GenesisPixel | Demos</title>
+		<link rel="shortcut icon" href="img/favicon.png">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" href="https://use.typekit.net/gmc0vlm.css">
+		<style>
+			:root { --chapter-color: #4A90D9; }
+			.hero__line, .hero__text-line, .card__line, .card__progress { background: var(--chapter-color) !important; }
+			.hero__text-line, .card__line, .card__progress-fill { background: rgba(74, 144, 217, 0.4) !important; }
+			.chapters__btn--active { background: var(--chapter-color) !important; }
+		</style>
+	</head>
+	<body>
+		<nav class="navbar">
+			<img src="img/stars.svg" class="navbar__icon" alt="">
+			<div class="navbar__lines">
+				<span class="navbar__line navbar__line--active" style="width:200px"></span>
+				<span class="navbar__line" style="width:120px"></span>
+				<span class="navbar__line" style="width:80px"></span>
+				<span class="navbar__line" style="width:160px"></span>
+				<span class="navbar__line" style="width:60px"></span>
+			</div>
+		</nav>
+		<main>
+			<div class="hero">
+				<div class="hero__header">
+					<div class="hero__header-content">
+						<span class="hero__line"></span>
+						<div class="hero__face-row">
+							<img src="img/face.jpg" alt="" class="hero__face">
+							<p class="hero__name">Sebastian Vasquez E.</p>
+						</div>
+						<div class="hero__svgs">
+							<img src="img/svg-8.png" class="hero__svg" alt="" width="32" height="32">
+							<img src="img/svg-11.png" class="hero__svg" alt="" width="32" height="32">
+							<img src="img/svg-4.png" class="hero__svg" alt="" width="32" height="32">
+							<img src="img/svg-2.png" class="hero__svg" alt="" width="32" height="32">
+						</div>
+						<h1 class="title">WebGL</h1>
+					</div>
+				</div>
+				<div class="hero__text-lines">
+					<div class="hero__text-col">
+						<div class="hero__text-row">
+							<img src="img/svg-8.png" class="icon hero__text-icon" alt="" width="24" height="24">
+							<h2>¿Qué es WebGL?</h2>
+						</div>
+						<p>WebGL (Web Graphics Library) es una API JavaScript que te permite renderizar gráficos 3D y 2D acelerados por hardware directamente en el navegador. Es el motor que impulsa desde visualizadores de productos en e-commerce hasta juegos 3D completos.</p>
+						<p>WebGL se basa en OpenGL ES y se comunica directamente con la tarjeta gráfica (GPU) de tu dispositivo. A diferencia de Canvas 2D, WebGL puede procesar miles de vértices y shaders en paralelo, lo que lo hace ideal para escenas 3D complejas.</p>
+					</div>
+					<span class="hero__divider"></span>
+					<div class="hero__text-col">
+						<div class="hero__text-row">
+							<img src="img/svg-2.png" class="icon hero__text-icon" alt="" width="24" height="24">
+							<h2>¿Para qué sirve?</h2>
+						</div>
+						<h3>Visualización 3D:</h3>
+						<p>Modelos interactivos de productos que puedes rotar, hacer zoom y explorar en tiempo real.</p>
+						<h3>Juegos en el navegador:</h3>
+						<p>Experiencias gaming de alta calidad sin necesidad de instalar software adicional.</p>
+						<h3>Simulaciones:</h3>
+						<p>Modelado científico, visualización de datos 3D y recreaciones arquitectónicas.</p>
+						<h3>Efectos especiales:</h3>
+						<p>Partículas, fuego, agua y otros efectos visuales que reaccionan al movimiento del usuario.</p>
+					</div>
+					<span class="hero__divider"></span>
+					<div class="hero__text-col">
+						<div class="hero__text-row">
+							<img src="img/svg-1.png" class="icon hero__text-icon" alt="" width="24" height="24">
+							<h2>La relación con Three.js</h2>
+						</div>
+						<p>WebGL es increí poderoso pero su API nativa es extremadamente verbosa y compleja. Configurar un triángulo simple puede requerir cientos de líneas de código.</p>
+						<p>Three.js nació como una abstracción amigable sobre WebGL. Te permite crear escenas, cámaras, materiales y luces con una API intuitiva mientras Three.js se encarga de traducir todo a las llamadas WebGL que la GPU entiende.</p>
+						<h3>Consejo profesional</h3>
+						<p>Siemp que puedas, usa Three.js o similar. Aprende WebGL nativo solo cuando necesites optimizaciones extremas o efectos personalizados que las librerías no ofrecen.</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<nav class="chapters">
+			<a href="chapter1.html" class="chapters__btn">1</a>
+			<a href="chapter2.html" class="chapters__btn">2</a>
+			<a href="chapter3.html" class="chapters__btn">3</a>
+			<a href="chapter4.html" class="chapters__btn">4</a>
+			<a href="chapter5.html" class="chapters__btn">5</a>
+			<a href="chapter6.html" class="chapters__btn">6</a>
+			<a href="chapter7.html" class="chapters__btn">7</a>
+			<a href="chapter8.html" class="chapters__btn chapters__btn--active">8</a>
+		</nav>
+	</body>
+</html>
