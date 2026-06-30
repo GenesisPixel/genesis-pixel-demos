@@ -99,14 +99,12 @@ genesis-pixel-demos/
 | Pink | `#FF96F9` | Chapter 5 - Three.js |
 | Yellow | `#FFC555` | Chapter 6 - Shaders |
 
----
 
-## Developer
 
-**Sebastian Vasquez Echavarria**
-
-Portfolio: [https://sebas-dev.vercel.app/](https://sebas-dev.vercel.app/)
-
----
+##
 
 Part of Genesis Pixel - [https://genesis-pixel.vercel.app/](https://genesis-pixel.vercel.app/)
+
+
+#
+<div align="center">❤️ Hecho con amor por Sebastián V.</div>
