@@ -101,10 +101,10 @@ genesis-pixel-demos/
 
 
 
-##
+
 
 Part of Genesis Pixel - [https://genesis-pixel.vercel.app/](https://genesis-pixel.vercel.app/)
 
 
 #
-<div align="center">❤️ Hecho con amor por Sebastián V.</div>
+<div align="center">❤️ Hecho con amor por <a href="https://sebas-dev.vercel.app/">Sebastián V.</a></div>
