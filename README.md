@@ -1,14 +1,10 @@
-<div align="center">
+<img src="img/svg/svg-8.png" width="40" /> <img src="img/svg/svg-1.png" width="40" /> <img src="img/svg/svg-2.png" width="40" /> <img src="img/svg/svg-4.png" width="40" />
 
-# GenesisPixel | Demos
+# GenesisPixel Demos
 
-![Preview](img/preview.jpg)
+>Interactive demo platform inspired by the cards on the Genesis Pixel main page.
 
-> Interactive demo platform inspired by the cards on the Genesis Pixel main page.
 
-</div>
-
----
 
 ## About this project
 
