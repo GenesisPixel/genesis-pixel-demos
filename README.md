@@ -1,4 +1,4 @@
-<img src="img/svg/svg-8.png" width="40" /> <img src="img/svg/svg-1.png" width="40" /> <img src="img/svg/svg-2.png" width="40" /> <img src="img/svg/svg-4.png" width="40" />
+<img src="img/svg-8.png" width="40" /> <img src="img/svg-1.png" width="40" /> <img src="img/svg-2.png" width="40" /> <img src="img/svg-4.png" width="40" />
 
 # GenesisPixel Demos
 
